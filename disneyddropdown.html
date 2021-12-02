@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Disney Scans</title>
+</head>
+<body>
+    <div class="container register">
+        <div class="row register-form">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h2>Select company for Disney</h2>
+                    <form autocomplete="off" name="google-sheet" action="disney.html">
+                        <label for="company_id"></label>
+                        <select id="company_id" class="form-control select2" name="status" >
+                            <option disabled selected value>Select Company ID</option>
+                            <option value="ALADDIN56">Aladdin - ALADDIN56</option>
+                            <option value="DTP988059">Disney Theatrical Productions - DTP988059</option>
+                            <option value="FT1460565">Frozen Tour - FT1460565</option>
+                            <option value="LKN614482">Lion King NY - LKN614482</option>
+                            <option value="LKR915120">Lion King Rafiki - LKR915120</option>
+                        </select>
+                        <input type="submit" name="submit" class="btnSubmit btn-block" onclick="handleSubmit()">
+                    </form>
+                    <br/>
+                    <a href="index.html">
+                        <input type="button" class="btn btn-warning" value="Back"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            $('.select2').select2();
+
+            function handleSubmit(){
+                const company_id = document.getElementById('company_id').value;
+                localStorage.setItem("company_id", company_id);
+                return;
+            } 
+        </script>
+</body>
+</html>

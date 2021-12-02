@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Populate dropdown list
+		with array values
+	</title>
+	
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+</head>
+
+<body style="text-align:center;">
+	
+	<h1 style="color:green;">
+		New Jersey
+	</h1>
+	
+	<p id="geeks" style=
+		"font-size: 20px;font-weight: bold">
+	</p>
+
+	
+	<select id="arr"></select>
+	
+
+	
+	<p id="gfg" style="font-size: 26px;
+		font-weight: bold; color: green;">
+	</p>
+
+	
+	<script>
+		var up = document.getElementById('geeks');
+		var down = document.getElementById('gfg');
+		var select = document.getElementById("arr");
+		var elmts = ["Uncommon Charter High School - UNSU11216",
+					"Uncommon Collegiate Charter High School - UCCHS2496",
+					"UnCommon Rochester- RPES - URR871731",
+					"UnCommon Rochester- RPES3 - URR568752",
+					"UnCommon Rochester- RPHS - URR346464",
+					"UnCommon Rochester- RPMS3 - URR507835",
+					"UnCommon Rochester- RPMSBC - URR476101",
+					"UnCommon Rochester- RPMSWC - URR525585",
+					"UnCommon Rochester- RPWCES - URR082847",
+					"Uncommon Schools - Brooklyn East Collegiate Charter School - UNSB11216",
+					"Uncommon Schools - Brownsville Collegiate Charter School - UNSBV11212",
+					"Uncommon Schools - Excellence Boys Charter School Elementary Academy - US-EBCSEA",
+					"Uncommon Schools - Excellence Boys Charter School Middle Academy - US-EBCSMA",
+					"Uncommon Schools - Excellence Girls Elementary Academy - UNSEG11221",
+					"Uncommon Schools - Kings Collegiate Charter School - UNSC11212",
+					"Uncommon Schools - Kings Elementary School - UNSK11203",
+					"Uncommon Schools - Leadership Prep Bedford Stuyvesant Elementary Academy - UNSLE11216",
+					"Uncommon Schools - Leadership Prep Bedford Stuyvesant Middle Academy - UNSLM11216",
+					"Uncommon Schools - Leadership Prep Brownsville Elementary Academy - UNSLV11212",
+					"Uncommon Schools - Leadership Prep Brownsville Middle Academy - UNSVM11212",
+					"Uncommon Schools - Leadership Prep Canarsie Elementary Academy  - US1001100",
+					"Uncommon Schools - Leadership Prep Canarsie Middle Academy  - US1070104",
+					"Uncommon Schools - Leadership Prep Ocean Hill Elementary - UNSLE11212",
+					"Uncommon Schools - Leadership Prep Ocean Hill Middle - UNSLM11212",
+					"Uncommon Schools - Ocean Hill Elementary School - UNSO11213",
+					"Uncommon Schools - Uncommon Leadership Charter High School - US-ULCHS2",
+					"Uncommon Schools - Uncommon Prep Charter High School - UNSU11236"];
+		
+		// Main function
+		
+			$.each(elmts, function(i, p) {
+				$('#arr').append($('<option></option>')
+							.val(p).html(p));
+			});
+		
+	</script>
+</body>
+
+</html>

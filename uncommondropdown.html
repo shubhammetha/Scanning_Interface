@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Disney Scans</title>
+</head>
+<body>
+    <div class="container register">
+        <div class="row register-form">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h2>Select School for Uncommon</h2>
+                    <form autocomplete="off" name="google-sheet" action="uncommon.html">
+                        <label for="company_id"></label>
+                        <select id="company_id" class="form-control select2" name="status" >
+                            <option disabled selected value>Select Company ID</option>
+                            <option value="UNSU11216">Uncommon Charter High School - UNSU11216</option>
+                            <option value="UCCHS2496">Uncommon Collegiate Charter High School - UCCHS2496</option>
+                            <option value="URR871731">UnCommon Rochester- RPES - URR871731</option>
+                            <option value="URR568752">UnCommon Rochester- RPES3 - URR568752</option>
+                            <option value="URR346464">UnCommon Rochester- RPHS - URR346464</option>
+                            <option value="URR507835">UnCommon Rochester- RPMS3 - URR507835</option>
+                            <option value="URR476101">UnCommon Rochester- RPMSBC - URR476101</option>
+                            <option value="URR525585">UnCommon Rochester- RPMSWC - URR525585</option>
+                            <option value="URR082847">UnCommon Rochester- RPWCES - URR082847</option>
+                            <option value="UNSB11216">Uncommon Schools - Brooklyn East Collegiate Charter School - UNSB11216</option>
+                            <option value="UNSBV11212">Uncommon Schools - Brownsville Collegiate Charter School - UNSBV11212</option>
+                            <option value="US-EBCSEA">Uncommon Schools - Excellence Boys Charter School Elementary Academy - US-EBCSEA</option>
+                            <option value="US-EBCSMA">Uncommon Schools - Excellence Boys Charter School Middle Academy - US-EBCSMA</option>
+                            <option value="UNSEG11221">Uncommon Schools - Excellence Girls Elementary Academy - UNSEG11221</option>
+                            <option value="UNSC11212">Uncommon Schools - Kings Collegiate Charter School - UNSC11212</option>
+                            <option value="UNSK11203">Uncommon Schools - Kings Elementary School - UNSK11203</option>
+                            <option value="UNSLE11216">Uncommon Schools - Leadership Prep Bedford Stuyvesant Elementary Academy - UNSLE11216</option>
+                            <option value="UNSLM11216">Uncommon Schools - Leadership Prep Bedford Stuyvesant Middle Academy - UNSLM11216</option>
+                            <option value="UNSLV11212">Uncommon Schools - Leadership Prep Brownsville Elementary Academy - UNSLV11212</option>
+                            <option value="UNSVM11212">Uncommon Schools - Leadership Prep Brownsville Middle Academy - UNSVM11212</option>
+                            <option value="US1001100">Uncommon Schools - Leadership Prep Canarsie Elementary Academy  - US1001100</option>
+                            <option value="US1070104">Uncommon Schools - Leadership Prep Canarsie Middle Academy  - US1070104</option>
+                            <option value="UNSLE11212">Uncommon Schools - Leadership Prep Ocean Hill Elementary - UNSLE11212</option>
+                            <option value="UNSLM11212">Uncommon Schools - Leadership Prep Ocean Hill Middle - UNSLM11212</option>
+                            <option value="UNSO11213">Uncommon Schools - Ocean Hill Elementary School - UNSO11213</option>
+                            <option value="US-ULCHS2">Uncommon Schools - Uncommon Leadership Charter High School - US-ULCHS2</option>
+                            <option value="UNSU11236">Uncommon Schools - Uncommon Prep Charter High School - UNSU11236</option>
+                        </select>
+                        <input type="submit" name="submit" class="btnSubmit btn-block" onclick="handleSubmit()">
+                    </form>
+                    <br/>
+                    <a href="index.html">
+                        <input type="button" class="btn btn-warning" value="Back"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            $('.select2').select2();
+
+            function handleSubmit(){
+                const company_id = document.getElementById('company_id').value;
+                localStorage.setItem("company_id", company_id);
+                return;
+            } 
+        </script>
+</body>
+</html>

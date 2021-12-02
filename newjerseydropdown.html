@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Disney Scans</title>
+</head>
+<body>
+    <div class="container register">
+        <div class="row register-form">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h2>Select company for NewJersey</h2>
+                    <form autocomplete="off" name="google-sheet" action="newjersey.html">
+                        <label for="company_id"></label>
+                        <select id="company_id" class="form-control select2" name="status" >
+                            <option disabled selected value>Select Company ID</option>
+                            <option value="AFULPA670">Academy for Urban Leadership Perth Amboy - AFULPA670</option>
+                            <option value="AT5930314">Alexandria TWP - AT5930314</option>
+                            <option value="ATSD46571">Allamuchy Township School District - ATSD46571</option>
+                            <option value="BELVIDERE">Belvidere - BELVIDERE</option>
+                            <option value="BHPS00015">Berkeley Heights Public Schools - BHPS00015</option>
+                            <option value="BT6959204">Bernards Township School District - BT6959204</option>
+                            <option value="BTSD00017">Bethlehem Township School District - BTSD00017</option>
+                            <option value="BATAHS508">Bishop Ahr St. Thomas Aquinas High School - BATAHS508</option>
+                            <option value="BTSD37472">Blairstown Township School District - BTSD37472</option>
+                            <option value="BSD485180">Bloomsbury School District - BSD485180</option>
+                            <option value="BB3042996">Bonnie Brae - BB3042996</option>
+                            <option value="BBSD74596">Bound Brook School District - BBSD74596</option>
+                            <option value="BT6766801">Branchburg Township - BT6766801</option>
+                            <option value="BRRSD3781">Bridgewater Raritan Regional School District - BRRSD3781</option>
+                            <option value="CS8854454">Cambridge School - CS8854454</option>
+                            <option value="CPS837131">Carteret Public Schools - CPS837131</option>
+                            <option value="CJCPCS583">Central Jersey College Prep Charter School - CJCPCS583</option>
+                            <option value="CS2284164">Chapin School - CS2284164</option>
+                            <option value="CCB679162">Childrens Corner BUMC - CCB679162</option>
+                            <option value="CGG299864">Clinton Glen Gardner - CGG299864</option>
+                            <option value="CTSD86189">Clinton Township School District - CTSD86189</option>
+                            <option value="CT1305034">Cranbury Township - CT1305034</option>
+                            <option value="CPS272008">Cranford Public Schools - CPS272008</option>
+                            <option value="CACS71187">Cresthaven Academy Charter School - CACS71187</option>
+                            <option value="DTS599653">Delaware Township School - DTS599653</option>
+                            <option value="DVRHS4348">Delaware Valley Regional High School - DVRHS4348</option>
+                            <option value="DOM176738">Diocese of Metuchen - DOM176738</option>
+                            <option value="EAT827745">East Amwell Township - EAT827745</option>
+                            <option value="EBPS49563">East Brunswick Public Schools - EBPS49563</option>
+                            <option value="EMSCC5679">East Mountain School Carrier Clinic - EMSCC5679</option>
+                            <option value="ESCONJ839">Educational Services Commission of New Jersey - ESCONJ839</option>
+                            <option value="ETS470180">Ewing Township Schools - ETS470180</option>
+                            <option value="FCA928547">Faith Christian Academy - FCA928547</option>
+                            <option value="FRSD11899">Flemington- Raritan Regional School District - FRSD11899</option>
+                            <option value="FACS89777">Foundation Academy Charter School - FACS89777</option>
+                            <option value="FTPSDC84">Franklin Township Public School District -  Somerset County - FTPSDC84</option>
+                            <option value="FTPSDC23">Franklin Township Public School District -  Warren County - FTPSDC23</option>
+                            <option value="FTSDC702">Franklin Township School District -  Hunterdon County - FTSDC702</option>
+                            <option value="FTSD67372">Frelinghuysen Township School District - FTSD67372</option>
+                            <option value="FASOP5464">French American School of Princeton - FASOP5464</option>
+                            <option value="FES522484">Frenchtown Elementary School - FES522484</option>
+                            <option value="GBCS67849">Greater Brunswick Charter School - GBCS67849</option>
+                            <option value="HPS475662">Hampton Public School - HPS475662</option>
+                            <option value="HT0398181">Harmony Township - HT0398181</option>
+                            <option value="HIACS7567">Hatikvah International Academy Charter School - HIACS7567</option>
+                            <option value="HBSD28808">High Bridge School District - HBSD28808</option>
+                            <option value="HPPS07115">Highland Park Public School - HPPS07115</option>
+                            <option value="HTPS27059">Hillsborough Township Public Schools - HTPS27059</option>
+                            <option value="HPS863732">Hillside Public Schools - HPS863732</option>
+                            <option value="HTS290308">Holland Township School - HTS290308</option>
+                            <option value="HSA513147">Holy Savior Academy - HSA513147</option>
+                            <option value="HT8454296">Hope Township - HT8454296</option>
+                            <option value="HV4559122">Hopewell Valley - HV4559122</option>
+                            <option value="HC1771188">Hunterdon Central - HC1771188</option>
+                            <option value="HCE423004">Hunterdon County ESC - HCE423004</option>
+                            <option value="IHS296977">Immaculata High School - IHS296977</option>
+                            <option value="ICS-HC144">Immaculate Conception School -  Hunterdon County - ICS- HC144</option>
+                            <option value="ICS-MC882">Immaculate Conception School -  Middlesex County - ICS- MC882</option>
+                            <option value="ICS-SC579">Immaculate Conception School -  Somerset County - ICS- SC579</option>
+                            <option value="ICSOT7969">International Charter School of Trenton - ICSOT7969</option>
+                            <option value="ISOT85839">Islamic School of Trenton - ISOT85839</option>
+                            <option value="JPS987563">Jamesburg Public Schools - JPS987563</option>
+                            <option value="KPS410791">Kenilworth Public Schools - KPS410791</option>
+                            <option value="KTSD86409">Kingwood Township School District - KTSD86409</option>
+                            <option value="KT9427554">Knowlton Twp - KT9427554</option>
+                            <option value="LAKEVIEW3">Lakeview School - LAKEVIEW3</option>
+                            <option value="LB4898685">Lebanon Borough - LB4898685</option>
+                            <option value="LT5215668">Lebanon Township - LT5215668</option>
+                            <option value="LPS736445">Linden Public Schools - LPS736445</option>
+                            <option value="MTSD94162">Mansfield Township School District - MTSD94162</option>
+                            <option value="MPS466477">Manville Public Schools - MPS466477</option>
+                            <option value="MCSCS1361">Middlesex County STEM Charter School - MCSCS1361</option>
+                            <option value="MPS145095">Milford Public School - MPS145095</option>
+                            <option value="MTSD91654">Monroe Township School District - MTSD91654</option>
+                            <option value="M86111312">Montgomery - M86111312</option>
+                            <option value="MA9689840">Montgomery Academy - MA9689840</option>
+                            <option value="MJC556658">Morris- Union Jointure Commission - MJC556658</option>
+                            <option value="MSD715489">Mountainside School District - MSD715489</option>
+                            <option value="NBPS05232">New Brunswick Public Schools - NBPS05232</option>
+                            <option value="NRSOP3144">New Road School of Parlin - NRSOP3144</option>
+                            <option value="NRSOS1750">New Road School of Somerset - NRSOS1750</option>
+                            <option value="NBTSD1026">North Brunswick Township School District - NBTSD1026</option>
+                            <option value="NWR091454">North Warren Regional - NWR091454</option>
+                            <option value="OBTPS7412">Old Bridge Township Public Schools - OBTPS7412</option>
+                            <option value="OT7661752">Oxford Township - OT7661752</option>
+                            <option value="PAC208353">Perth Amboy Catholic - PAC208353</option>
+                            <option value="PSD224935">Phillipsburg School District - PSD224935</option>
+                            <option value="PTS765942">Piscataway Township Schools - PTS765942</option>
+                            <option value="PPS143095">Plainfield Public Schools - PPS143095</option>
+                            <option value="POHATCONG">Pohatcong - POHATCONG</option>
+                            <option value="PCS365327">Princeton Charter School - PCS365327</option>
+                            <option value="PPS712831">Princeton Public Schools - PPS712831</option>
+                            <option value="QCACS0293">Queen City Academy Charter School - QCACS0293</option>
+                            <option value="RPS552773">Rahway Public Schools - RPS552773</option>
+                            <option value="RTPS84030">Readington Township Public Schools - RTPS84030</option>
+                            <option value="RAVCS7670">Ridge and Valley Charter School - RAVCS7670</option>
+                            <option value="RPS918943">Robbinsville Public Schools - RPS918943</option>
+                            <option value="RBPS82137">Roselle Borough Public Schools - RBPS82137</option>
+                            <option value="RCHS41659">Roselle Catholic High School - RCHS41659</option>
+                            <option value="SAS304207">Saint Ann School - SAS304207</option>
+                            <option value="SJHS49223">Saint Joseph High School - SJHS49223</option>
+                            <option value="SJS607463">Saint Joseph School - SJS607463</option>
+                            <option value="SPAJS5590">Saints Philip and James School - SPAJS5590</option>
+                            <option value="SSKS19476">Saint Stanislaus Kostka School - SSKS19476</option>
+                            <option value="SPF147015">Scotch Plains -  Fanwood Public Schools - SPF147015</option>
+                            <option value="SGMS31643">Secret Garden Montessori School - SGMS31643</option>
+                            <option value="SCESC8089">Somerset County Educational Services Commission - SCESC8089</option>
+                            <option value="SCVTS802">Somerset County Vocational & Technical Schools - SCVTS802</option>
+                            <option value="SHLI67642">Somerset Hills Learning Institute - SHLI67642</option>
+                            <option value="SH2585156">Somerset Hills School District - SH2585156</option>
+                            <option value="SPS220250">Somerville Public Schools - SPS220250</option>
+                            <option value="SBBSD8556">South Bound Brook School District - SBBSD8556</option>
+                            <option value="SBSD59735">South Brunswick School District - SBSD59735</option>
+                            <option value="SHRSD9559">South Hunterdon Regional School District - SHRSD9559</option>
+                            <option value="SP8133314">South Plainfield - SP8133314</option>
+                            <option value="SPOTSWOOD">Spotswood - SPOTSWOOD</option>
+                            <option value="S56823751">Springfield - S56823751</option>
+                            <option value="SUSOTA463">Sprout U School of the Arts - SUSOTA463</option>
+                            <option value="SACA68483">St. Ann Classical Academy - SACA68483</option>
+                            <option value="SBA452257">St. Bartholomew Academy - SBA452257</option>
+                            <option value="SBS808151">St. Bartholomew School - SBS808151</option>
+                            <option value="SHS387440">St. Helena School - SHS387440</option>
+                            <option value="SJS224645">St. James School - SJS224645</option>
+                            <option value="SJVS81967">St. John Vianney School - SJVS81967</option>
+                            <option value="SMS231817">St. Matthew School - SMS231817</option>
+                            <option value="SMS695013">St. Matthias School - SMS695013</option>
+                            <option value="SMS942618">St Michael School - SMS942618</option>
+                            <option value="STTAS5154">St. Thomas the Apostle School - STTAS5154</option>
+                            <option value="SCDSOTSH9">Stuart Country Day School of the Sacred Heart - SCDSOTSH9</option>
+                            <option value="SPS707002">Summit Public Schools - SPS707002</option>
+                            <option value="8849399">test pk - 8849399</option>
+                            <option value="TTSD25281">Tewksbury Township School District - TTSD25281</option>
+                            <option value="TAS752019">The Albrook School - TAS752019</option>
+                            <option value="TBOGCH513">The Barack Obama Green Charter HS - TBOGCH513</option>
+                            <option value="TCS009514">The Center School - TCS009514</option>
+                            <option value="TNS313050">The Newgrange School - TNS313050</option>
+                            <option value="TVCS85342">The Village Charter School - TVCS85342</option>
+                            <option value="TEECS9349">Thomas Edison EnergySmart Charter School - TEECS9349</option>
+                            <option value="TOU385987">Township of Union - TOU385987</option>
+                            <option value="TPS822684">Trenton Public Schools - TPS822684</option>
+                            <option value="TSCS27741">Trenton STEM- to- Civics Charter School - TSCS27741</option>
+                            <option value="UCE121978">Union County ESC - UCE121978</option>
+                            <option value="UCV904814">Union County Vocational - UCV904814</option>
+                            <option value="UTSD41655">Union Township School District - UTSD41655</option>
+                            <option value="WSOP94332">Waldorf School of Princeton - WSOP94332</option>
+                            <option value="WCCA87759">Warren County Christian Academy - WCCA87759</option>
+                            <option value="WTS539642">Warren Township Schools - WTS539642</option>
+                            <option value="WBSD46778">Washington Borough School District - WBSD46778</option>
+                            <option value="WTSD47576">Washington Township School District - WTSD47576</option>
+                            <option value="WBSD06067">Watchung Borough School District - WBSD06067</option>
+                            <option value="WHRHSD090">Watchung Hills Regional High School District - WHRHSD090</option>
+                            <option value="WPS676161">Westfield Public School - WPS676161</option>
+                            <option value="WW-PRSD14">West Windsor -  Plainsboro Regional School District - WW- PRSD14</option>
+                            <option value="WTCSD2134">White Township Consolidated School District - WTCSD2134</option>
+                            <option value="WT5665134">Woodbridge Township - WT5665134</option>
+                        </select>
+                        <input type="submit" name="submit" class="btnSubmit btn-block" onclick="handleSubmit()">
+                    </form>
+                    <br/>
+                    <a href="index.html">
+                        <input type="button" class="btn btn-warning" value="Back"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            $('.select2').select2();
+
+            function handleSubmit(){
+                const company_id = document.getElementById('company_id').value;
+                localStorage.setItem("company_id", company_id);
+                return;
+            } 
+        </script>
+</body>
+</html>

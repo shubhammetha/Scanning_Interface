@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Disney Scans</title>
+</head>
+<body>
+    <div class="container register">
+        <div class="row register-form">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h2>Select company for Westchester</h2>
+                    <form autocomplete="off" name="google-sheet" action="westchester.html">
+                        <label for="company_id"></label>
+                        <select id="company_id" class="form-control select2" name="status" >
+                            <option disabled selected value>Select Company ID</option>
+                            <option value="WAHJHS908">Alexander Hamilton Junior-Senior High School - WAHJHS908</option>
+                            <option value="WAEGES620">Alice E. Grady Elementary School - WAEGES620</option>
+                            <option value="WAMS06834">AMD Middle School - WAMS06834</option>
+                            <option value="AS0849170">Andalusia School - AS0849170</option>
+                            <option value="ASHS06136">Archbishop Stepinac High School - ASHS06136</option>
+                            <option value="BC9571137">Bedford CSD - BC9571137</option>
+                            <option value="WBFE69200">Benjamin Franklin Elementary - WBFE69200</option>
+                            <option value="9179373600">Blind Brook - Rye Schools - 9179373600</option>
+                            <option value="WBMMS7519">Blue Mountain Middle School - WBMMS7519</option>
+                            <option value="WBES38232">Brookside Elementary School - WBES38232</option>
+                            <option value="W-BMPRSS4">Bruno M. Ponterio Ridge Street School - W-BMPRSS4</option>
+                            <option value="WBES18076">Buchanan-Verplanck Elementary School - WBES18076</option>
+                            <option value="133791156">Byram Hills Central School District - 133791156</option>
+                            <option value="WCLDPS939">Carl L. Dixson Primary School - WCLDPS939</option>
+                            <option value="WCKA81241">Cedar Knolls Academy - WCKA81241</option>
+                            <option value="WCES19778">Claremont Elementary School - WCES19778</option>
+                            <option value="WCHES4134">Coman Hill Elem School - WCHES4134</option>
+                            <option value="WCBMS0573">Copper Beech Middle School - WCBMS0573</option>
+                            <option value="WECP66319">Early Childhood Program - WECP66319</option>
+                            <option value="EU1453859">Elmsford UFSD - EU1453859</option>
+                            <option value="W-FLHS525">Fox Lane High School - W-FLHS525</option>
+                            <option value="W-FLMS283">Fox Lane Middle School - W-FLMS283</option>
+                            <option value="WFGLES184">Frank G. Lindsey Elementary School - WFGLES184</option>
+                            <option value="WFWES0804">Furnace Woods Elementary School - WFWES0804</option>
+                            <option value="WGWES8361">George Washington Elementary School - WGWES8361</option>
+                            <option value="WGA025626">Greenburgh Academy - WGA025626</option>
+                            <option value="GC5120492">Greenburgh CSD - GC5120492</option>
+                            <option value="HCKU85521">Hawthorne Cedar Knolls UFSD - HCKU85521</option>
+                            <option value="WHMS58565">HCC Middle School - WHMS58565</option>
+                            <option value="WHES66107">Highview Elementary School - WHES66107</option>
+                            <option value="WHE949465">Hillcrest Elementary - WHE949465</option>
+                            <option value="WJFKES358">John F. Kennedy Elementary School - WJFKES358</option>
+                            <option value="WJPE64849">John Paulding Elementary - WJPE64849</option>
+                            <option value="WKCA41444">Kenneth Clark Academy - WKCA41444</option>
+                            <option value="WKSES1370">King Street Elementary School - WKSES1370</option>
+                            <option value="LC5214129">Lakeland CSD - LC5214129</option>
+                            <option value="WLFJES340">Lee F. Jackson Elementary School - WLFJES340</option>
+                            <option value="WLES49666">Lincoln-Titus Elementary School - WLES49666</option>
+                            <option value="WLHHSAHS9">Linden Hill High School/Achieve Alternative High School - WLHHSAHS9</option>
+                            <option value="9142203007">Mamaroneck UFSD - 9142203007</option>
+                            <option value="W-MKE7589">Mount Kisco Elementary - W-MKE7589</option>
+                            <option value="WMPCS1107">Mount Pleasant Cottage School - WMPCS1107</option>
+                            <option value="WOE818189">Oakside Elementary - WOE818189</option>
+                            <option value="OU8277660">Ossining UFSD - OU8277660</option>
+                            <option value="WPAES8763">Park Avenue Elementary School - WPAES8763</option>
+                            <option value="WPEEC1104">Park Early Education Center - WPEEC1104</option>
+                            <option value="PCS521756">Peekskill City Schools - PCS521756</option>
+                            <option value="WPH658531">Pocantico Hills - WPH658531</option>
+                            <option value="PCU431193">Port Chester-Rye UFSD - PCU431193</option>
+                            <option value="W-PRE4148">Pound Ridge Elementary - W-PRE4148</option>
+                            <option value="PSOTT3746">Public Schools of the Tarrytowns - PSOTT3746</option>
+                            <option value="WRA531487">REACH Academy - WRA531487</option>
+                            <option value="WRJBES867">Richard J. Bailey Elementary School - WRJBES867</option>
+                            <option value="WRS007717">Roosevelt School - WRS007717</option>
+                            <option value="WSHMS1261">Sleepy Hollow Middle-High School - WSHMS1261</option>
+                            <option value="SWB287993">South Westchester BOCES - SWB287993</option>
+                            <option value="WTAEES964">Thomas A. Edison Elementary School - WTAEES964</option>
+                            <option value="WTJES1721">Thomas Jefferson Elementary School - WTJES1721</option>
+                            <option value="WUH874376">Uriah Hill - WUH874376</option>
+                            <option value="WVCES2174">Van Cortlandtville Elementary School - WVCES2174</option>
+                            <option value="WWPHS4358">Walter Panas High School - WWPHS4358</option>
+                            <option value="WWES66550">Wampus Elem School - WWES66550</option>
+                            <option value="WWII21149">Washington Irving Intermediate - WWII21149</option>
+                            <option value="W-WPE1530">West Patent Elementary - W-WPE1530</option>
+                            <option value="WWME45168">WL Morse Elemantary - WWME45168</option>
+                            <option value="WWMS29654">Woodlands Middle-High School - WWMS29654</option>
+                            <option value="WWE974172">Woodside Elementary - WWE974172</option>
+
+                            <option value="ACS899298">Amani Charter School - ACS899298</option>
+                            <option value="BC9571137">Bedford CSD - BC9571137</option>
+                            <option value="9179373600">Blind Brook Rye Schools - 9179373600</option>
+                            <option value="133791156">Byram Hills Central School District - 133791156</option>
+                            <option value="EFACADEMY">EF Academy - EFACADEMY</option>
+                            <option value="EU1453859">Elmsford UFSD - EU1453859</option>
+                            <option value="GC5120492">Greenburgh CSD - GC5120492</option>
+                            <option value="HCKU85521">Hawthorne Cedar Knolls UFSD - HCKU85521</option>
+                            <option value="LC5214129">Lakeland CSD - LC5214129</option>
+                            <option value="9142203007">Mamaroneck UFSD - 9142203007</option>
+                            <option value="OU8277660">Ossining UFSD - OU8277660</option>
+                            <option value="PCS521756">Peekskill City Schools - PCS521756</option>
+                            <option value="WPH658531">Pocantico Hills - WPH658531</option>
+                            <option value="PCU431193">Port Chester-Rye UFSD - PCU431193</option>
+                            <option value="PSOTT3746">Public Schools of the Tarrytowns - PSOTT3746</option>
+
+                        </select>
+                        <input type="submit" name="submit" class="btnSubmit btn-block" onclick="handleSubmit()">
+                    </form>
+                    <br/>
+                    <a href="index.html">
+                        <input type="button" class="btn btn-warning" value="Back"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            $('.select2').select2();
+
+            function handleSubmit(){
+                const company_id = document.getElementById('company_id').value;
+                localStorage.setItem("company_id", company_id);
+                return;
+            } 
+        </script>
+</body>
+</html>

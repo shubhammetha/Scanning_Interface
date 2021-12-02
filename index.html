@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="style.css">
+    <title>Roster Scan</title>
+</head>
+<body>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h2>Mirimus Roster Scanning</h2>
+                    <label></label>
+                    <div class="f-group">
+                        <select id="selectbox" name="" class="form-control" onchange="javascript:location.href = this.value;">
+                            <option disabled selected value>--Select your company--</option>
+                            <option value="disneyddropdown.html">Disney</option>
+                            <option value="westchesterdropdown.html">Westchester</option>
+                            <option value="newjerseydropdown.html">New Jersey</option>
+                            <option value="lincolncenterdropdown.html">Lincoln Center</option>
+                            <option value="roundaboutdropdown.html">Roundabout Theatre</option>
+                            <option value="uncommondropdown.html">Uncommon Schools</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

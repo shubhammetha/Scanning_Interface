@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>    
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h2>Westchester Roster Scanning</h2>
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <form autocomplete="off" name="google-sheet" action="westchester.html">
+                                    <div class="form-group">
+                                        <input type="text" name='CompanyID' class="form-control" id="result-CompanyID" value="" readonly/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="PersonID" class="form-control" placeholder="Scan Name Barcode" value="" required autofocus/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="TestBarcodeID" class="form-control" placeholder="Scan Tube Barcode" value="" required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                    </div>
+                                </form>
+                                <a href="index.html">
+                                    <input type="button" class="btn btn-warning" value="Reset"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzt4x-V3EFHg-c1bd1OjdJhtXuP-9bG3QFAGF_rTnYUJ9HV2OI9zth9Gf6VlQMkUIG2UQ/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit', e => {
+            // e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log("Success"))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+            const company_id = localStorage.getItem('company_id');
+            document.getElementById("result-CompanyID").value=company_id;
+            document.forms[0].submit()
+
+        </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </body>
+</html>
